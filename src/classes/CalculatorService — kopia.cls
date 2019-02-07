@@ -7,7 +7,7 @@ public with sharing class CalculatorService implements Schedulable, Queueable, D
 	
 	public CalculatorService ()
 	{
-		counter  = 1234567;
+		counter  = 0;
 	}
 
 CalculatorService.iterate(9);
@@ -20,7 +20,7 @@ i.iterate(9);
         for (Integer i = 0; i < numberOfIterations; i++) {
             counter++;
         }
-        return counter +1;
+        return counter;
     }
 
     public static Double addTwoNumbers(Double firstNumber, Double secondNumber){
